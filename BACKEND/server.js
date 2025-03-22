@@ -15,7 +15,7 @@ const ProductSchema = new Mongoose.Schema({
 
 const Product = Mongoose.model("products", ProductSchema)
 
-Mongoose.connect("mongodb+srv://mary:Welcome1234@cluster0.9nw5aik.mongodb.net/productsdatabase?retryWrites=true&w=majority&appName=Cluster0")
+Mongoose.connect("mongodb+srv://root:Root1234@cluster0.9nw5aik.mongodb.net/productsdatabase?retryWrites=true&w=majority&appName=Cluster0")
 
 app.get("/fetch/products", async function(req, res){
     const readProducts = await Product.find()
